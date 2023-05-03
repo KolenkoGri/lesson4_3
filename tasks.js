@@ -15,7 +15,10 @@ const mathematics = prompt("Введите кол-во баллов по мат�
 const russianLanguage = prompt("Введите кол-во баллов по русскому языку:");
 const informatics = prompt("Введите кол-во баллов по информатике:");
 
-if (mathematics + russianLanguage + informatics >= 265) {
+if (
+  Number(mathematics) + Number(russianLanguage) + Number(informatics) >=
+  265
+) {
   console.log("Вы поступили на бюджет");
 } else {
   console.log("Вы не поступили на бюджет или ввели данные не в формате чисел");
